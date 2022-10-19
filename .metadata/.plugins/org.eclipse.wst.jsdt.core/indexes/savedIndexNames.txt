@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\Users\yurim\OneDrive\Área de Trabalho\Sistemas Da Informação\5ºperiodo\Eng. Software II\Trabalho\Implementação\urnaEletronicaWeb\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1564338102.index
+1012310953.index
+1960178630.index
+4200589284.index
+1410082664.index

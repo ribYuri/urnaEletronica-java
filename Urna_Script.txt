@@ -1,0 +1,61 @@
+    -- Apaga a tabela Eleitor caso exista
+    DROP TABLE IF EXISTS ELEITOR CASCADE;    
+
+    -- Apaga a tabela Candidato caso exista
+    DROP TABLE IF EXISTS CANDIDATO CASCADE;
+
+    -- Cria a tabela Cliente
+    CREATE TABLE ELEITOR
+    (
+        Nome				VARCHAR(15)			NOT NULL,
+        Sobrenome 			VARCHAR(15)			NOT NULL,
+        Titulo				INTEGER				NOT NULL,
+	Idade 				INTEGER				NOT NULL, 
+	Votou				Boolean				DEFAULT FALSE,
+        PRIMARY KEY (Titulo)
+    );
+
+   -- Cria tabela CANDIDATO
+    CREATE TABLE CANDIDATO
+    (
+	CTitulo 				INTEGER			NOT NULL,
+        Partido					VARCHAR(40) 	        NOT NULL,
+        NumVotos				INTEGER 		DEFAULT 0,
+        Numero					INTEGER			NOT NULL, 
+        PRIMARY KEY (CTitulo),
+	FOREIGN KEY (CTitulo) REFERENCES ELEITOR (Titulo)
+    );
+
+
+-- Insere tuplas em Eleitor
+    INSERT INTO eleitor
+    VALUES
+    	('Jorge', 'Brito', 888665, 16),
+    	('Tarantino', 'Silva', 777777, 25),
+    	('Lucas', 'Silva', 111111, 30),
+    	('Pedro', 'Bonfim', 255156, 18),
+    	('Maria', 'Marta', 256879, 35),
+    	('Sara', 'Rocha', 875665, 26),
+    	('Luke', 'Walter', 111148, 19),
+	('Sergio', 'Yoda', 888333, 65),
+	('Jonh', 'Water', 898487, 45),
+	('Mario', 'Kenobi', 558445, 64),
+	('Roger', 'Sparow', 558542, 34),
+	('Walter', 'Branco', 558942, 33),
+	('Branco', 'Branco', 0, 0),
+	('Nulo', 'Nulo', 99999999, 0);
+
+
+-- Insere tuplas em Candidato
+    INSERT INTO candidato
+    VALUES
+    	(898487, 'Partido do JosueSpam', default, 33),
+	(256879, 'Parido Imperial', default, 11556),
+	(888333, 'Partido Star Truck', default, 10101),
+	(558445, 'Partido Liberal Totalitario', default, 35353),
+	(558542, 'Partido Dos Wookies', default, 55),
+    	(558942, 'Partido Dos Wookies', default, 89899),
+	(0, 'Voto em Branco', default, 0),
+	(99999999, 'Voto Nulo', default, 99999999);
+
+
