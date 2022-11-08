@@ -1,5 +1,5 @@
 # Urna Eletronica
-Sistema de uma urna eletrônica elaborado como trabalho final da matéira de Engenharia de Software II. O sistema foi desenvolvido utilizando java-web e arquitetura MVC, usando servlets e o servidor Apache Tomcat v10, além de conexão com banco de dados PostregreSQL.
+Sistema de uma urna eletrônica elaborado como trabalho final da matéria de Engenharia de Software II. O sistema foi desenvolvido utilizando java-web e arquitetura MVC, usando servlets e o servidor Apache Tomcat v10, além de conexão com banco de dados PostregreSQL.
 
 # Como Executar
 Para inicar precisaremos da Eclipse IDE e do Apache Tomcat v10 já instalado e então seguir os passos:
